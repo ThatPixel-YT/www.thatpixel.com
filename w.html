@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel's Glitch Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+    body {
+      background: linear-gradient(45deg, #000000, #191970, #000000);
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 40px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .glitch {
+      font-family: 'Kanit', sans-serif;
+      font-size: 80px;
+      color: indigo;
+      text-shadow: 4px 4px 8px purple;
+      animation: glitch-animation 2s infinite, float-animation 6s infinite;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    .glitch:hover {
+      transform: scale(1.1);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(3px 3px 6px purple);
+      transition: transform 0.3s ease-out;
+    }
+    .icon:hover {
+      transform: scale(1.3);
+    }
+    .social-link {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+
+      color: purple;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+    .social-link:hover {
+      color: indigo;
+    }
+    .footer {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    @keyframes glitch-animation {
+      /* ... your existing keyframe animations */
+    }
+    @keyframes float-animation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+    .glitch:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="header">
+    <h1 class="glitch">Pixel's Glitch Hub</h1>
+    <p>Step into the <a href="https://www.youtube.com/@SMG4" target="_blank" class="glitch-link">glitchy</a> realm of pixels and creativity.</p>
+  </div>
+  <div class="container">
+    <a class="social-link" href="https://www.youtube.com/@ThatPixelGMD" target="_blank">
+      <img class="icon" src="file:///C:/Users/nuwan/Downloads/Yutube.png" alt="YouTube">
+    </a>
+    <a class="social-link" href="https://www.twitch.tv/thatpixelyt" target="_blank">
+      <img class="icon" src="file:///C:/Users/nuwan/Downloads/Twitch.png" alt="Twitch">
+    </a>
+    <a class="social-link" href="https://twitter.com/ThatPixel_YT" target="_blank">
+      <img class="icon" src="file:///C:/Users/nuwan/Downloads/Twitter.png" alt="Twitter">
+    </a>
+    <a class="social-link" href="https://discord.gg/79sBtZQHpj" target="_blank">
+      <img class="icon" src="file:///C:/Users/nuwan/Downloads/Discord.png" alt="Discord">
+    </a>
+    <a class="social-link" href="mailto:thatpixelyt@gmail.com">
+      <img class="icon" src="file:///C:/Users/nuwan/Downloads/Gmail.png" alt="Email">
+    </a>
+  </div>
+  <footer class="footer">
+    <p>Contact me at thatpixelyt@gmail.com !!</p>
+  </footer>
+</body>
+</html>
